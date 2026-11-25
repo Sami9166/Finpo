@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Finpo
+  datasource:
+    url: jdbc:mysql://localhost:3306/finpo?allowPublicKeyRetrieval=true&useSSL=false
+    username: finpo
+    password: finpo
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+finpo:
+  import:
+    etf-master:
+      enabled: true
+      dir: data
